@@ -1,0 +1,11 @@
+
+.skill-row {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.skill-icon {
+    font-size: 70px;
+}
+
