@@ -8,6 +8,7 @@
     <title>Drew R. Goodman | Full Stack Developer</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/projects.css">
 
 </head>
 
@@ -15,56 +16,61 @@
     body {
         /* background: blue; */
     }
+
+    .home-wrapper {
+        height: calc(100vh - 56px);
+        background: #ccc;
+    }
 </style>
 
 <body>
     <!-- Header / Navbar -->
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
-        <a class="navbar-brand" href="#">DREW R. GOODMAN</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
-            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar top-bar"></span>
-            <span class="icon-bar middle-bar"></span>
-            <span class="icon-bar bottom-bar"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="#">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Portfolio</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
-                </li>
-            </ul>
+        <div class="container">
+            <a class="navbar-brand" href="#">DREW R. GOODMAN</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse d-flex  justify-content-end" id="navbarNavDropdown">
+
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="btn btn-outline-success m-2 my-sm-0" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-outline-success m-2 my-sm-0" href="#">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-outline-success m-2 my-sm-0" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
 
     <!-- Landing Page -->
 
     <div class="home-wrapper">
-        <div class="home-heading">
-            Drew R. Goodman
-        </div>
-        <div class="home-subheading">
-            Full Stack Web Developer
-        </div>
-        <div class="home-buttons">
-            <div class="home-button">About Me</div>
-            <div class="home-button">Portfolio</div>
-            <div class="home-button">Contact</div>
-        </div>
+            <div class="home-heading">
+                Drew R. Goodman
+            </div>
+            <div class="home-subheading">
+                Full Stack Web Developer
+            </div>
+            <div class="home-buttons">
+                <div class="home-button">About Me</div>
+                <div class="home-button">Portfolio</div>
+                <div class="home-button">Contact</div>
+            </div>
     </div>
 
     <!-- My Skills -->
-    <div class="skills-wrapper">
+    <div class="skills-wrapper container">
 
         <div class="skills-header">
-            My Skills
+            <h1>My Skills</h1>
         </div>
 
         <div class="skill-row">
@@ -123,15 +129,36 @@
     </div>
     <!-- My Portfolio -->
 
-    <div class="projects-wrapper">
-        <div class="projects-header">Recent Works</div>
-        <div class="project-wrapper">
-            <div class="project-title">
-                PetStashSupply Co.
-            </div>
-            <div class="project-caption">
+    <div class="portfolio-wrapper container">
+        <div class="projects-header">
+            <h1>Recent Works</h1>
+        </div>
+        <div class="projects-wrapper">
+                <div class="project-wrapper">
+                    <img class="project-image" src="static/images/project/petstash-1.png">
+                    <div class="project-title">
+                        PetStashSupply Co.
+                    </div>
+                </div>
+                <div class="project-wrapper">
+                    <img class="project-image" src="static/images/project/tripletriad-1.png">
+                    <div class="project-title">
+                        Triple Triad
+                    </div>
+                </div>
+                <div class="project-wrapper">
+                    <img class="project-image" src="static/images/project/diner.png">
+                    <div class="project-title">
+                        Bottega Diner
+                    </div>
+                </div>
+                <div class="project-wrapper">
+                    <img class="project-image" src="static/images/project/eCommerce.png">
+                    <div class="project-title">
+                        eCommerce Site Mockup
+                    </div>
+                </div>
 
-            </div>
         </div>
     </div>
 
