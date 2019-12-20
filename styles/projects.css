@@ -5,10 +5,11 @@
 }
 
 .projects-wrapper {
-    display: grid;
+    /* background: #e3e3e3; */
+    /* display: grid;
     grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
     grid-column-gap: 20px;
-    grid-row-gap: 15px;
+    grid-row-gap: 15px; */
 }
 
 .project-wrapper {
